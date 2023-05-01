@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gerador de Tabuada</h1>
+
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball">
+        </label>
+    </header>
+
+    <div class="container">
+            <P class="digite">Digite um valor para gerar sua tabuada:</P>
+
+            <input class="digito" type="text" id="numero" placeholder="Digite um número...">
+            <button onclick="gerarTabuada()"><span class="text">Gerar Tabuada <i
+                    class="fa-solid fa-wand-magic-sparkles"></i></span></button><button onclick="limpar()"> <span class="text">Limpar
+                <i class="fa-solid fa-broom"></i></span></button>
+            <table class="tabelagerada" id="tabela-tabuada"></table>
+    </div>
+
+    <footer>
+        <p class="dese">Desenvolvido por <span class="gabr">Gabriel Figueira <i class="fa-solid fa-glasses"></i></span></p>
+        <div class="social">
+            <a href="https://github.com/figueiraz" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/iosoficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <p class="dir">&copy 2023 | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

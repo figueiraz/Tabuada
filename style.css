@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  transition: 0.7s;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background 0.2s linear;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  box-shadow: 1px 1px 25px rgb(143, 143, 143);
+}
+
+header h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: auto;
+}
+
+/* BOTÃO DARK MODE */
+.checkbox {
+  opacity: 0;
+  position: relative;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+  /* DEIXAR DO LADO DIREITO */
+  margin-left: auto;
+  margin-right: 50px;
+  /* ---------------------- */
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f3f3f3;
+}
+
+.fa-sun {
+  color: #f3f3f3;
+}
+
+
+.container {
+  box-shadow: 1px 1px 25px rgb(143, 143, 143);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+
+.digite {
+  text-align: center;
+  color: rgb(11, 11, 11);
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+input::placeholder {
+  color: rgba(230, 230, 230, 0.655);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.digito {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  cursor: text;
+  background-color: #7c49d0;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: aliceblue;
+  width: 200px;
+font-size: 18px;
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+
+
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  width: 200px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all .3s;
+  margin-bottom: 5px;
+ }
+ 
+ button:active,
+ button:hover {
+  outline: 0;
+ }
+ 
+ button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+ }
+ 
+ button:hover span {
+  background: none;
+ }
+ 
+ button:active {
+  transform: scale(0.9);
+ }
+
+
+
+
+
+
+
+.tabelagerada {
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: justify;
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+  align-items: center;
+  border-radius: 15px;
+  transition: 3s;
+}
+
+.tabelagerada th,
+.tabelagerada td {
+  padding: 10px;
+  text-align: center;
+  width: 100px;
+  border-radius: 15px;
+}
+
+i {
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  background-color: #ddd;
+}
+
+.dese {
+  padding-top: 10px;
+}
+
+.gabr {
+  font-weight: 600;
+  color: #AF40FF;
+}
+
+.social {
+  text-align: center;
+  color: #333;
+}
+
+.social i {
+  color: whitesmoke;
+  align-items: center;
+  font-size: 30px;
+  color: #333;
+  transition: 0.4s;
+}
+
+.social i:hover {
+  color: #AF40FF;
+}
+
+.dir {
+  width: 100%;
+  background-color: #333;
+  color: #ddd;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+
+
+/* MUDANÇA DE CORES DARK-MODE */
+body.dark {
+  background: #292c35;
+}
+
+.dark header {
+  background: #202020;
+  box-shadow: 1px 1px 25px rgb(23, 23, 23);
+}
+
+.dark header h1 {
+  color: whitesmoke;
+}
+
+.dark .container {
+  box-shadow: 1px 1px 25px rgb(23, 23, 23);
+}
+
+.dark .digite {
+  color: whitesmoke;
+}
+
+.dark footer {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  background-color: #333;
+}
+
+.dark .dese {
+  color: #ddd;
+  padding-top: 10px;
+}
+
+.dark .social i {
+  color: #ddd;
+}
+
+.social i:hover {
+  color: #AF40FF
+}
+
+.dark .dir {
+  width: 100%;
+  background-color: #242323;
+  color: #ddd;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #AF40FF;
+  border-radius: 10px;
+}
+/* FIM DO DARK MODE SETTINGS */
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 300px;
+  }
+
+  .label {
+    transform: scale(1.2);
+  }
+  }
